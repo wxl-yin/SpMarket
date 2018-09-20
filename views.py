@@ -10,3 +10,7 @@ def index2(request):
 def index3(request):
 
 	return HttpResponse("ok")
+
+def index3(request):
+
+	return HttpResponse("ok")
