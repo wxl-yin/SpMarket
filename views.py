@@ -14,3 +14,6 @@ def index3(request):
 def index4(request):
 
 	return HttpResponse("ok")
+	
+def register(request):
+	return HttpResponse("注册")
