@@ -5,7 +5,7 @@ from django.views import View
 class RegisterView(View):
     # 注册功能
     def get(self, request):
-        return render(request,"sp_user/reg.html")
+        return render(request, "sp_user/reg.html")
 
     def post(self, request):
         pass
@@ -14,7 +14,7 @@ class RegisterView(View):
 class LoginView(View):
     # 登录功能
     def get(self, request):
-        return render(request,"sp_user/login.html")
+        return render(request, "sp_user/login.html")
 
     def post(self, request):
         pass
