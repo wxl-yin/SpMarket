@@ -6,3 +6,6 @@ def index(request):
 	
 def index2(request):
 	return HttpResponse("ok")
+	
+def index3(request):
+	return HttpResponse("ok")
