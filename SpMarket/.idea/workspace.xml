@@ -1,25 +1,602 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="81c75eea-aa8e-4560-a72d-dc34c4db4a37" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/111" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/address.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/allorder.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/application.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/applicationjob.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/assets/iconfont/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/assets/iconfont/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/assets/iconfont/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/assets/iconfont/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/boundphone.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/category.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/city.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/collect-edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/collect.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/css/amazeui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/css/ch.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/css/check.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/fonts/_notes/dwsync.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/forgetpassword.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/gladdress.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/1-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/1-icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/1-icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/1-icon3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/1-icon4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/1-icon5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/1-icon6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/1-icon7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/2-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/2icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/2icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/2icon3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/3icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/3icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/3icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/IMG_3574_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/banner1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/bj.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/bm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/brand.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/candar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/care.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/city.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/contactqq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/contacttele.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/dui.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/ewm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/game.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/gift.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/gqhb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/grayxin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/guoqi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/gz1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/gz2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/gz3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/herat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/hotline.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/icon3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/icon4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/icon5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/icon6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/icon7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/icon8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/infortx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/j_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/j_06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/j_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/jp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/ka.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/lz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/m_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/m_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/m_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/m_05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/m_06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/m_07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/m_08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/m_09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/memtx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/moneysafty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/moneytele.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/my.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/order-bot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/order-my.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/order-pic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/order-top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/order.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/ph.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/pic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/qd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/qiandao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/qqlogin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/redherat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/redxin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/s1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/s2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/s3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/s4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/s5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/s6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/sao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/shop1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/shop2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/shop3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/shop4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/shopcart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/sign-up-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/sinalog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/skongjian.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/sqq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/ssina.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/step.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/sweixin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/sweixinfriend.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/tele.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/test.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/test1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/test10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/test11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/test2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/test21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/test3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/test4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/test5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/test6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/test7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/test8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/test9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/tit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/tj.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/ts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/tt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/tx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/tx1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/update.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/volume.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/wei.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/weichong.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/wl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/wxlogin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/ye.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/yhq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/yzm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/images/zhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/infor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/integral.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/integralexchange.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/integralrecords.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/job.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/js/amazeui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/js/area.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/js/date.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/js/iscroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/js/jquery-1.10.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/js/jquery.mobile-1.4.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/js/popup.mini.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/js/time.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/member.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/message.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/messdetail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/messdetailactive.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/money.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/mymessage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/myrecommend.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/news.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/newsdetail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/order.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/orderdetail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/pay.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/payment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/recharge.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/recommend.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/records.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/reg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/release.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/saftystep.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/shopcart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/speed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/step.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/tidings.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/tureorder.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/village.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/ygq.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Supermarket/Supermarket/yhq.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sp_user/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sp_user/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sp_user/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sp_user/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sp_user/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sp_user/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/iconfont/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/iconfont/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/iconfont/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/iconfont/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/amazeui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/ch.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/check.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/_notes/dwsync.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/1-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/1-icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/1-icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/1-icon3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/1-icon4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/1-icon5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/1-icon6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/1-icon7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/2-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/2icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/2icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/2icon3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/3icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/3icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/3icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/IMG_3574_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/banner1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bj.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/bm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/brand.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/candar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/care.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/city.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/contactqq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/contacttele.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/dui.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/ewm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/game.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/gift.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/gqhb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/grayxin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/guoqi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/gz1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/gz2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/gz3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/herat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/hotline.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icon3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icon4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icon5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icon6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icon7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/icon8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/infortx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/j_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/j_06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/j_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/jp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/ka.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/lz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/m_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/m_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/m_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/m_05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/m_06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/m_07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/m_08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/m_09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/memtx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/moneysafty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/moneytele.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/my.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/order-bot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/order-my.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/order-pic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/order-top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/order.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/ph.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/pic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/qd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/qiandao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/qqlogin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/redherat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/redxin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/s1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/s2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/s3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/s4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/s5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/s6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/sao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/shop1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/shop2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/shop3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/shop4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/shopcart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/sign-up-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/sinalog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/skongjian.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/sqq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/ssina.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/step.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/sweixin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/sweixinfriend.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/tele.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/test.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/test1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/test10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/test11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/test2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/test21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/test3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/test4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/test5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/test6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/test7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/test8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/test9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/tit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/tj.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/ts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/tt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/tx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/tx1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/update.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/volume.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/wei.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/weichong.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/wl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/wxlogin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/ye.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/yhq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/yzm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/zhi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/amazeui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/area.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/date.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/iscroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery-1.10.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.mobile-1.4.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/popup.mini.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/time.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/public/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sp_user/infor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sp_user/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sp_user/member.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sp_user/reg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SpMarket.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SpMarket.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpMarket/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpMarket/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpMarket/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpMarket/urls.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1896789991">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="406" />
+          <entry key="py" value="356" />
+          <entry key="py@SpMarket" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CommandLine" value="10" />
+          <entry key="HTML" value="406" />
+          <entry key="Python" value="356" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="8" />
+          <entry key="py" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="8" />
+          <entry key="Python" value="4" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sp_user/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+                <marker date="1537434208634" expanded="true" signature="104:226" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sp_user/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="11" column="71" lean-forward="true" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/sp_user/infor.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20">
+              <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#ul#1;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/sp_user/member.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="66" column="14" lean-forward="true" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#580#628#0#HTML" expanded="true" />
+                <element signature="e#2962#3066#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/public/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="695">
+              <caret line="36" column="22" lean-forward="true" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>src=&quot;</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>src=&quot;{% static '</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/SpMarket/settings.py" />
+        <option value="$PROJECT_DIR$/SpMarket/urls.py" />
+        <option value="$PROJECT_DIR$/templates/sp_user/login.html" />
+        <option value="$PROJECT_DIR$/templates/sp_user/reg.html" />
+        <option value="$PROJECT_DIR$/templates/public/base.html" />
+        <option value="$PROJECT_DIR$/templates/sp_user/member.html" />
+        <option value="$PROJECT_DIR$/sp_user/views.py" />
+        <option value="$PROJECT_DIR$/templates/sp_user/infor.html" />
+        <option value="$PROJECT_DIR$/sp_user/urls.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SpMarket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpMarket" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpMarket" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpMarket" type="462c0819:PsiDirectoryNode" />
+              <item name="sp_user" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\spmarket\SpMarket\templates\sp_user" />
+      <recent name="D:\project\spmarket\SpMarket\templates\public" />
+      <recent name="D:\project\spmarket\SpMarket\static" />
+      <recent name="D:\project\spmarket\SpMarket" />
+      <recent name="D:\project\spmarket\SpMarket\sp_user" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
-    <configuration name="SpMarket" type="Python.DjangoServer" factoryName="Django server">
+    <configuration name="SpMarket" type="Python.DjangoServer" factoryName="Django server" singleton="true">
       <module name="SpMarket" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="SpMarket.settings" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="D:\virtual\django\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -35,5 +612,146 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="81c75eea-aa8e-4560-a72d-dc34c4db4a37" name="Default Changelist" comment="" />
+      <created>1537432166131</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1537432166131</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.22112462" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="manage.py@SpMarket" order="0" weight="0.43606558" />
+      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="4" />
+      <window_info anchor="bottom" id="Python Console" order="5" />
+      <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info anchor="bottom" id="Find" order="8" />
+      <window_info anchor="bottom" id="Run" order="9" weight="0.3295082" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="SciView" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/SpMarket/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpMarket/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+          <folding>
+            <element signature="e#642#683#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sp_user/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Supermarket/Supermarket/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sp_user/reg.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/public/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="36" column="22" lean-forward="true" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sp_user/member.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="66" column="14" lean-forward="true" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#580#628#0#HTML" expanded="true" />
+            <element signature="e#2962#3066#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sp_user/infor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#ul#1;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sp_user/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1537434208634" expanded="true" signature="104:226" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sp_user/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="71" lean-forward="true" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
