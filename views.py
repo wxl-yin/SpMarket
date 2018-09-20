@@ -1,0 +1,8 @@
+
+
+def index(request):
+	return HttpResponse("ok")
+	
+	
+def index2(request):
+	return HttpResponse("ok")
