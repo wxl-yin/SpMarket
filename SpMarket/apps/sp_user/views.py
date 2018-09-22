@@ -1,8 +1,11 @@
 from django.shortcuts import render, redirect
 from django.urls import reverse
+from django.utils.decorators import method_decorator
 from django.views import View
 
+from db.base_view import BaseVerifyView
 from sp_user.forms import RegisterForm, LoginForm
+from sp_user.helper import verify_login_required
 
 
 class RegisterView(View):
@@ -26,12 +29,11 @@ class RegisterView(View):
         return render(request, "sp_user/reg.html", {"form": form})
 
 
-
 class LoginView(View):
     # 登录功能
     def get(self, request):
         login_form = LoginForm()
-        return render(request, "sp_user/login.html",{"form":login_form})
+        return render(request, "sp_user/login.html", {"form": login_form})
 
     def post(self, request):
         # 接收数据
@@ -52,21 +54,21 @@ class LoginView(View):
         return render(request, "sp_user/login.html", {"form": login_form})
 
 
-class CenterView(View):
+class CenterView(BaseVerifyView):
     # 个人中心功能
     def get(self, request):
         phone = request.session.get('phone')
-
         context = {
-            "phone":phone
+            "phone": phone
         }
-        return render(request, "sp_user/member.html",context)
+        return render(request, "sp_user/member.html", context)
 
     def post(self, request):
         pass
 
 
-class AddressView(View):
+
+class AddressView(BaseVerifyView):
     # 收货地址功能
     def get(self, request):
         pass
@@ -75,13 +77,31 @@ class AddressView(View):
         pass
 
 
-class InfoView(View):
+class InfoView(BaseVerifyView):
     # 个人资料功能
     def get(self, request):
+        # 验证用户是否登录
+        # 判断 session 中是否有 用户的ID
+        user_id = request.session.get("ID")
+        # print(user_id)
+        if user_id is None:
+            # 没有登录, 跳转到登录页面
+            return redirect(reverse("sp_user:login"))
         return render(request, "sp_user/infor.html")
 
     def post(self, request):
         pass
+
+    # # 登录验证的装饰器
+    # @method_decorator(verify_login_required)
+    # def dispatch(self, request, *args, **kwargs):
+    #     return super().dispatch(request, *args, **kwargs)
+
+
+# 登录验证装饰器的使用 函数形式
+@verify_login_required
+def info(request):
+    return render(request, "sp_user/infor.html")
 
 
 class LogoutView(View):
