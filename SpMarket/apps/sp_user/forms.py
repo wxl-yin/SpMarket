@@ -20,6 +20,17 @@ class RegisterForm(forms.ModelForm):
                                                             ),
                                  )
 
+    verify_code = forms.CharField(required=True,
+                                  error_messages={
+                                      "required":"请填写验证码!"
+                                  },
+                                  widget=forms.TextInput(attrs={"class":"reg-yzm","placeholder":"输入验证码"})
+                                  )
+
+    agree = forms.BooleanField(required=True,
+                               error_messages={
+                                   "required":"必须同意用户协议"
+                               })
     class Meta:
         model = Users
         fields = ['phone', 'password']
@@ -59,6 +70,17 @@ class RegisterForm(forms.ModelForm):
             raise forms.ValidationError("该手机号码已经被注册")
         # 返回该字段清洗后的值
         return phone
+
+    # 验证 验证码
+    def clean_verify_code(self):
+        # self.cleaned_data.get('verify_code')
+        # 获取用户提交的验证码
+        verify_code = self.cleaned_data.get('verify_code')
+        # 获取原始数据中保存的session验证码
+        session_code = self.data.get('session_code')
+        if verify_code != session_code:
+            raise forms.ValidationError("验证码错误!")
+        return verify_code
 
     # 综合验证
     def clean(self):

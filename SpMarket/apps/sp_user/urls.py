@@ -7,6 +7,7 @@ from sp_user.views import (RegisterView,
                            InfoView,
                            LogoutView,
                            info,
+                           SendCodeView,
                            )
 
 urlpatterns = [
@@ -17,4 +18,5 @@ urlpatterns = [
     url(r'^info/$', InfoView.as_view(), name="info"),  # 个人资料
     # url(r'^info/$', info, name="info"),  # 个人资料
     url(r'^logout/$', LogoutView.as_view(), name="logout"),  # 退出
+    url(r'^SendCodeView/$', SendCodeView.as_view(), name="SendCodeView"),  # 发送验证码
 ]
