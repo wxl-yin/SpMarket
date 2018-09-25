@@ -10,7 +10,7 @@
 {% endblock %}
 
 {% block meta_css %}
-    <link href="css/check.css" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'css/check.css' %}" rel="stylesheet" type="text/css"/>
 {% endblock %}
 
 {% block header %}
@@ -94,20 +94,15 @@
     <script>
         // 初始化Web Uploader
         var uploader = WebUploader.create({
-
             // 选完文件后，是否自动上传。
             auto: true,
-
             // swf文件路径
             swf: "{% static 'webuploader/Uploader.swf' %}",
-
             // 文件接收服务端。
             server: "{% url 'sp_user:upload_head' %}",
-
             // 选择文件的按钮。可选。
             // 内部根据当前运行是创建，可能是input元素，也可能是flash.
             pick: '#filePicker',
-
             // 只允许选择图片文件。
             accept: {
                 title: 'Images',
@@ -115,16 +110,15 @@
                 mimeTypes: 'image/*'
             }
         });
-
         // 当有文件添加进来的时候
-        uploader.on( 'fileQueued', function( file ) {
+        uploader.on('fileQueued', function (file) {
             $img = $("#head_img");
             // 创建缩略图
             // 如果为非图片文件，可以不用调用此方法。
             // thumbnailWidth x thumbnailHeight 为 100 x 100
-            uploader.makeThumb( file, function( error, src ) {
-                $img.attr( 'src', src );
-            }, 100, 100 );
+            uploader.makeThumb(file, function (error, src) {
+                $img.attr('src', src);
+            }, 100, 100);
         });
     </script>
 {% endblock %}
