@@ -36,10 +36,10 @@ class Users(BaseModel):
                                       default=3,
                                       choices=sex_choices,
                                       )
-    # head = models.ImageField(verbose_name='用户头像',
-    #                          upload_to='head/%Y/%m',
-    #                          default='default/infortx.png',
-    #                          )
+    head = models.ImageField(verbose_name='用户头像',
+                             upload_to='head/%Y/%m',
+                             default='user/201809/23/tx1.png',
+                             )
     birthday = models.DateField(verbose_name='出生日期',
                                 null=True,
                                 blank=True,
@@ -67,3 +67,6 @@ class Users(BaseModel):
         return self.phone
 
     # 更新时间和修改时间,是否删除都不用写了
+
+class TestImageModel(models.Model):
+    head = models.ImageField(upload_to="user/%Y%m/%d",verbose_name="用户的头像")

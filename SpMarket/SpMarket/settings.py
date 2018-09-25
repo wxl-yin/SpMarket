@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'sp_user.apps.SpUserConfig',  # 用户模块
+    'sp_goods.apps.SpGoodsConfig',  # 商品模块
 ]
 
 MIDDLEWARE = [
@@ -66,6 +67,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
             ],
         },
     },
@@ -124,6 +126,13 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
 
+
+# 上传图片配置
+MEDIA_URL = "/static/media/"
+# 上传图片的物理目录
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media')
+
+
 # 缓存配置
 CACHES = {
     "default": {
@@ -138,5 +147,10 @@ CACHES = {
 # 配置 session 的存储引擎, 使用 redis存储session
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "default"
+
+
+# ACCESS_KEY_ID/ACCESS_KEY_SECRET 根据实际申请的账号信息进行替换
+ACCESS_KEY_ID = "LTAI20TmdmMQE1VD"
+ACCESS_KEY_SECRET = "Ka9nuuR2aL86huSggTXq1ZpqyeTywr"
 
 

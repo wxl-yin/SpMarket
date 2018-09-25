@@ -1,12 +1,15 @@
-from django.http import JsonResponse
+import uuid
+
+from django.http import JsonResponse, HttpResponse
 from django.shortcuts import render, redirect
 from django.urls import reverse
 from django.utils.decorators import method_decorator
 from django.views import View
+from django.views.decorators.csrf import csrf_exempt
 
 from db.base_view import BaseVerifyView
 from sp_user.forms import RegisterForm, LoginForm
-from sp_user.helper import verify_login_required
+from sp_user.helper import verify_login_required, send_sms
 from sp_user.models import Users
 
 
@@ -86,16 +89,43 @@ class InfoView(BaseVerifyView):
     # 个人资料功能
     def get(self, request):
         # 验证用户是否登录
-        # 判断 session 中是否有 用户的ID
         user_id = request.session.get("ID")
-        # print(user_id)
-        if user_id is None:
-            # 没有登录, 跳转到登录页面
-            return redirect(reverse("sp_user:login"))
-        return render(request, "sp_user/infor.html")
+        # 查询当前用户的所有信息
+        user = Users.objects.filter(pk=user_id).first()
+
+        context = {
+            "user":user
+        }
+        return render(request, "sp_user/infor.html",context)
 
     def post(self, request):
-        pass
+        # 1. 接收数据
+        user_id = request.session.get("ID")
+        data = request.POST
+        file = request.FILES['head']
+        # 2. 处理数据
+        # 更新用户的头像
+        user = Users.objects.get(pk=user_id)
+        user.head = file
+        user.save()
+        # 3. 响应
+        return redirect(reverse("sp_user:center"))
+
+
+# 单独使用一个视图函数处理图片的上传
+@csrf_exempt # 移除令牌限制
+def upload_head(request):
+    if request.method == "POST":
+        # 获取用户的id
+        user_id = request.session.get("ID")
+        # 获取用户对象
+        user = Users.objects.get(pk=user_id)
+        # 保存图片
+        user.head = request.FILES['file'] # 通过键获取对应的文件
+        user.save()
+        return JsonResponse({"error": 0})
+    else:
+        return JsonResponse({"error": 1})
 
     # # 登录验证的装饰器
     # @method_decorator(verify_login_required)
@@ -149,6 +179,11 @@ class SendCodeView(View):
 
         # 发送验证码 使用阿里云发送, 开发自己模拟
         print("===========code==={}==================".format(random_code))
+        __business_id = uuid.uuid1()
+        # print(__business_id)
+        params = "{\"code\":\"%s\"}" % random_code
+        rs = send_sms(__business_id, phone, "尹强", "SMS_141905190", params)
+        print(rs)
 
         # ? 将生成的随机码保存到session中
         request.session['random_code'] = random_code
