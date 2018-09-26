@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'sp_user.apps.SpUserConfig',  # 用户模块
     'sp_goods.apps.SpGoodsConfig',  # 商品模块
+    'ckeditor',  # ckeditor富文本编辑器
+    'ckeditor_uploader',  # 添加ckeditor富文本编辑器文件上传部件
 ]
 
 MIDDLEWARE = [
@@ -118,6 +120,16 @@ USE_L10N = True
 # USE_TZ = True
 USE_TZ = False
 
+
+# 七牛云密钥等配置
+QINIU_ACCESS_KEY = '1PUnhOead-nDOIby2mDi8Y6s7D6jtMdDd5sn-Cca'
+QINIU_SECRET_KEY = 'R-JhVsC8xBUNp3F7P5GWY7hnlswqYr2F9knle0yn'
+QINIU_BUCKET_NAME = 'image'
+QINIU_BUCKET_DOMAIN = '7xkx6z.com1.z0.glb.clouddn.com/'
+QINIU_SECURE_URL = False      #使用http
+PREFIX_URL = 'http://'
+
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
@@ -125,12 +137,25 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+# STATIC_ROOT = os.path.join(BASE_DIR,"static")
+
+# # 静态文件的url配置
+# STATIC_URL = QINIU_BUCKET_DOMAIN + '/static/'
+# # 静态文件的存储引擎
+# STATICFILES_STORAGE = 'qiniustorage.backends.QiniuStaticStorage'
 
 
 # 上传图片配置
-MEDIA_URL = "/static/media/"
+# MEDIA_URL = "/static/media/"
 # 上传图片的物理目录
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media')
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media')
+
+# 七牛云配置 上传图片
+
+# 上传文件地址配置
+MEDIA_URL = PREFIX_URL + QINIU_BUCKET_DOMAIN + "/"
+# 上传文件的存储引擎配置
+DEFAULT_FILE_STORAGE = 'qiniustorage.backends.QiniuStorage'
 
 
 # 缓存配置
@@ -153,4 +178,14 @@ SESSION_CACHE_ALIAS = "default"
 ACCESS_KEY_ID = "LTAI20TmdmMQE1VD"
 ACCESS_KEY_SECRET = "Ka9nuuR2aL86huSggTXq1ZpqyeTywr"
 
+
+# 配置ckeditor
+CKEDITOR_UPLOAD_PATH = "uploads/" #配置上传目录
+
+# 编辑器样式配置
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',
+    },
+}
 

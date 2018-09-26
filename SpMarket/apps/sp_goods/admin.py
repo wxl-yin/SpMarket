@@ -1,6 +1,9 @@
 from django.contrib import admin
 
-from sp_goods.models import Category, Unit, GoodsSPU, GoodsSKU, Gallery
+from sp_goods.models import Category, Unit, GoodsSPU, GoodsSKU, Gallery, Banner, Activity, ActivityZone, \
+    ActivityZoneGoods
+
+admin.site.site_header = "超级电商管理平台"
 
 
 @admin.register(Category)
@@ -36,4 +39,29 @@ class GoodsSKUAdmin(admin.ModelAdmin):
     # 关联模型展示
     inlines = [
         GoodsSKUAdminInLine
+    ]
+
+
+# 注册Banner的模型到后台
+@admin.register(Banner)
+class BannerAdmin(admin.ModelAdmin):
+    pass
+
+
+# 注册Activity的模型到后台
+@admin.register(Activity)
+class ActivityAdmin(admin.ModelAdmin):
+    pass
+
+
+# 注册ActivityZone的模型到后台
+class ActivityZoneAdminInline(admin.StackedInline):
+    model = ActivityZoneGoods
+    extra = 2
+
+
+@admin.register(ActivityZone)
+class ActivityZoneAdmin(admin.ModelAdmin):
+    inlines = [
+        ActivityZoneAdminInline
     ]

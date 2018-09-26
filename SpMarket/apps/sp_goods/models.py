@@ -1,3 +1,4 @@
+from ckeditor_uploader.fields import RichTextUploadingField
 from django.db import models
 
 from db.base_model import BaseModel
@@ -52,13 +53,14 @@ class GoodsSPU(BaseModel):
                                 max_length=20,
                                 )
 
-    content = models.TextField(verbose_name="商品详情")
+    # content = models.TextField(verbose_name="商品详情")
+    content = RichTextUploadingField(verbose_name="商品详情")
 
     def __str__(self):
         return self.spu_name
 
     class Meta:
-        verbose_name = "商品SPU"
+        verbose_name = "商品SPU管理"
         verbose_name_plural = verbose_name
 
 
@@ -104,7 +106,7 @@ class GoodsSKU(BaseModel):
         return self.sku_name
 
     class Meta:
-        verbose_name = "商品管理"
+        verbose_name = "商品SKU管理"
         verbose_name_plural = verbose_name
 
 
@@ -142,6 +144,13 @@ class Banner(BaseModel):
     order = models.SmallIntegerField(verbose_name="排序",
                                      default=0,
                                      )
+
+    class Meta:
+        verbose_name = "首页轮播管理"
+        verbose_name_plural = verbose_name
+
+    def __str__(self):
+        return self.name
 
 
 class Activity(BaseModel):
@@ -184,7 +193,7 @@ class ActivityZone(BaseModel):
         return self.title
 
     class Meta:
-        verbose_name = "活动管理"
+        verbose_name = "活动专区管理"
         verbose_name_plural = verbose_name
 
 
@@ -198,3 +207,7 @@ class ActivityZoneGoods(BaseModel):
     goods_sku = models.ForeignKey(to="GoodsSKU",
                                   verbose_name="专区商品SKU_ID",
                                   )
+
+    class Meta:
+        verbose_name = "活动专区商品"
+        verbose_name_plural = verbose_name
