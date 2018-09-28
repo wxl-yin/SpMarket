@@ -58,6 +58,9 @@ class LoginView(View):
             request.session.set_expiry(0)
 
             # 跳转到用户中心
+            # 有办法获取到跳转的位置, 没有必要跳转到个人中心
+            if request.GET.get('next', None):
+                return redirect(request.GET.get('next'))
             return redirect(reverse('sp_user:center'))
         # 验证失败
         return render(request, "sp_user/login.html", {"form": login_form})
@@ -94,9 +97,9 @@ class InfoView(BaseVerifyView):
         user = Users.objects.filter(pk=user_id).first()
 
         context = {
-            "user":user
+            "user": user
         }
-        return render(request, "sp_user/infor.html",context)
+        return render(request, "sp_user/infor.html", context)
 
     def post(self, request):
         # 1. 接收数据
@@ -113,7 +116,7 @@ class InfoView(BaseVerifyView):
 
 
 # 单独使用一个视图函数处理图片的上传
-@csrf_exempt # 移除令牌限制
+@csrf_exempt  # 移除令牌限制
 def upload_head(request):
     if request.method == "POST":
         # 获取用户的id
@@ -121,7 +124,7 @@ def upload_head(request):
         # 获取用户对象
         user = Users.objects.get(pk=user_id)
         # 保存图片
-        user.head = request.FILES['file'] # 通过键获取对应的文件
+        user.head = request.FILES['file']  # 通过键获取对应的文件
         user.save()
         return JsonResponse({"error": 0})
     else:
@@ -152,6 +155,7 @@ class SendCodeView(View):
     """
         发送验证码
     """
+
     def post(self, request):
         # 1. 接收请求数据
         phone = request.POST.get("tel", "")
@@ -188,7 +192,6 @@ class SendCodeView(View):
         # ? 将生成的随机码保存到session中
         request.session['random_code'] = random_code
         request.session.set_expiry(60)
-
 
         # 3. 响应 json , 告知 ajax是否发送成功
         return JsonResponse({"status": "200"})

@@ -64,8 +64,7 @@
         <h4>数量：</h4>
         <div class="d-stock">
             <a class="decrease">-</a>
-            <input id="num" readonly="" class="text_box" name="" type="text" value="1">
-            <input id="id" type="hidden" value="644">
+            <input sku_id="{{ goods_sku.pk }}" id="num" readonly="" class="text_box" name="" type="text" value="1">
             <a class="increase">+</a>
             <span id="dprice" class="price" style="display:none"> 36</span>
         </div>
@@ -91,7 +90,7 @@
                 <ul class="comment-pic">
                     <li>
                         <div class="tit">
-                            <img src="images/tx.png" class="tx"/>
+                            <img src="{% static 'images/tx.png' %}" class="tx"/>
                             <span>songke2014</span>
                             <i> [2016-01-01]</i>
                         </div>
@@ -101,7 +100,7 @@
                     </li>
                     <li>
                         <div class="tit">
-                            <img src="images/tx.png" class="tx"/>
+                            <img src="{% static 'images/tx.png' %}" class="tx"/>
                             <span>songke2014</span>
                             <i> [2016-01-01]</i>
                         </div>
@@ -120,8 +119,8 @@
     <!--底部-->
     <div style=" height: 55px;"></div>
     <ul class="fix-shopping">
-        <li><a href="shopcart.html" class="join">加入购物车</a></li>
-        <li><a href="tureorder.html" class="imm-buy">立即购买</a></li>
+        <li><a href="javascript:;" class="join">加入购物车</a></li>
+        <li><a href="{% url 'sp_car:首页' %}" class="imm-buy">去购物车</a></li>
     </ul>
 {% endblock %}
 
@@ -136,7 +135,6 @@
                 var current_num = parseInt(self.siblings('input').val());
                 current_num += 1;
                 self.siblings('input').val(current_num);
-                update_item(self.siblings('input').data('item-id'));
             })
             $('.decrease').click(function () {
                 var self = $(this);
@@ -144,8 +142,35 @@
                 if (current_num > 1) {
                     current_num -= 1;
                     self.siblings('input').val(current_num);
-                    update_item(self.siblings('input').data('item-id'));
                 }
+            })
+
+            // 加数据到购物车
+            $(".join").on("click",function(){
+                //发送ajax请求,添加购物车数据
+                // 通过ajax请求后台, 添加数据库成功
+                var sku_id = $(".text_box").attr('sku_id');
+                var count = $(".text_box").val();
+                var data = {
+                    "sku_id": sku_id,
+                    "count": count,
+                    "csrfmiddlewaretoken": "{{ csrf_token }}"
+                };
+                {#console.debug(data)#}
+                $.post("{% url 'sp_car:addCar' %}", data, function (data) {
+                    if (data.error == "0") {
+                        //提示
+                        alert("添加购物车成功!")
+                    } else if (data.error == "1") {
+                        // 没有登录, 跳转到登录页面进行, 通过js代码实现跳转
+                        if (confirm(data.msg)) {
+                            // js 实现跳转的方法
+                            location.href = "{% url 'sp_user:login' %}?next={% url 'sp_goods:DetailView' goods_sku.pk  %}"
+                        }
+                    } else {
+                        alert(data.msg);
+                    }
+                });
             })
         })
     </script>

@@ -1,0 +1,29 @@
+{% extends 'public/base.html' %}
+{% load static %}
+
+{% block content %}
+    <form method="get" action="/search/">
+    <div class="cate-search2">
+        <input type="text" name="q" value="{{ query }}" class="cate-input1" placeholder="请输入您要搜索的产品关键词"/>
+        <input type="submit" value="" class="cate-btn1"/>
+    </div>
+    </form>
+    <ul class="list-pro">
+        {% for result in page %}
+            <li>
+                <a href="{% url 'sp_goods:DetailView' result.object.pk %}"><img src="{{ MEDIA_URL }}{{ result.object.logo }}" class="list-pic1"/></a>
+                <div class="shop-list-mid" style="width: 65%;">
+                    <div class="tit">
+                        <a href="{% url 'sp_goods:DetailView' result.object.pk %}">
+                            {{ result.object.goods_spu.spu_name }} {{ result.object.sku_name }}
+                        </a>
+                    </div>
+                    <div class="am-gallery-desc">￥{{ result.object.price }}</div>
+                </div>
+            </li>
+
+            {% empty %}
+            <li>搜索的商品不存在!</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

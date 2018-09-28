@@ -22,10 +22,14 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     # 上传部件自动调用的上传地址
     url(r'^ckeditor/', include("ckeditor_uploader.urls")),
+    # 全文搜索框架
+    url(r'^search/', include('haystack.urls')),
     # 绑定 用户模块子路由
     url(r'^user/', include("sp_user.urls", namespace="sp_user")),
     # 绑定 商品模块的子路由
     url(r'^goods/', include("sp_goods.urls", namespace="sp_goods")),
     # 127.0.0.1:8000 显示商城首页
     url(r'^$', IndexView.as_view(), name="商城首页"),
+    # 购物车模块
+    url(r'^car/', include('sp_car.urls', namespace="sp_car")),
 ]

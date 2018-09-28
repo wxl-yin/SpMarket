@@ -31,7 +31,7 @@ def verify_login_required(func):
     def verify_login(request, *args, **kwargs):
         if request.session.get("ID") is None:
             # 没有登录
-            return redirect(reverse("sp_user:login"))
+            return redirect(reverse("sp_user:login")) # 设置响应头 location: url
         else:
             return func(request, *args, **kwargs)
 
