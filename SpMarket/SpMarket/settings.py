@@ -122,8 +122,8 @@ USE_L10N = True
 USE_TZ = False
 
 # 七牛云密钥等配置
-QINIU_ACCESS_KEY = '1PUnhOead-nDOIby2mDi8Y6s7D6jtMdDd5sn-Cca'
-QINIU_SECRET_KEY = 'R-JhVsC8xBUNp3F7P5GWY7hnlswqYr2F9knle0yn'
+QINIU_ACCESS_KEY = 'xxxx'
+QINIU_SECRET_KEY = 'xxxx'
 QINIU_BUCKET_NAME = 'image'
 QINIU_BUCKET_DOMAIN = '7xkx6z.com1.z0.glb.clouddn.com/'
 QINIU_SECURE_URL = False  # 使用http
@@ -172,8 +172,8 @@ SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "default"
 
 # ACCESS_KEY_ID/ACCESS_KEY_SECRET 根据实际申请的账号信息进行替换
-ACCESS_KEY_ID = "LTAI20TmdmMQE1VD"
-ACCESS_KEY_SECRET = "Ka9nuuR2aL86huSggTXq1ZpqyeTywr"
+ACCESS_KEY_ID = "xxxx"
+ACCESS_KEY_SECRET = "xxxxx"
 
 # 配置ckeditor
 CKEDITOR_UPLOAD_PATH = "uploads/"  # 配置上传目录
